@@ -1,0 +1,12 @@
+# Removing temp file if exists
+> resetTempFile
+# Executing a failing task
+-> tiny_failingTask
+# Checking logs of failing task
+> checkFailingTask
+# Removing temp file if exists
+> resetTempFile
+# Executing a not failing task
+> tiny_notFailingTask
+# Checking logs of not failing task
+> checkNotFailingTask
