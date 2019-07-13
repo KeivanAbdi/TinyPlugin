@@ -88,8 +88,9 @@ object TinyPlugin extends AutoPlugin {
   def openApp(appName: String): Unit = {
     import scala.sys.process._
     Seq(
-      "open",
-      s"/Applications/$appName.app"
+      "osascript",
+      "-e",
+      s"""tell application "$appName" to activate"""
     ).!
   }
 
